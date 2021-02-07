@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand">Cooking master</a>
+          <div class="d-flex">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Recipes</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="input-group mb-3 searchInput mt-5 m-auto">
+        <input
+          type="text"
+          id="foodItem"
+          class="form-control"
+          placeholder="Search for Meal..."
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+          value=""
+        />
+        <div class="input-group-append">
+          <button id="searchButton" class="btn text-white" type="button">
+            Button
+          </button>
+        </div>
+      </div>
+
+      <div class="alert bg-danger w-50 m-auto text-light" role="alert">
+        Input Shouldn't be Empty
+      </div>
+    </main>
+    <section>
+      <div id="foodDetails"></div>
+      <div id="allFood"></div>
+    </section>
+
+    <section id="nothingFoundMsg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center m-auto p-5">
+            <p><i class="fas fa-frown text-danger"></i></p>
+            <h2>Sorry! No Food Items Found</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
