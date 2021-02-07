@@ -48,7 +48,7 @@ const allFoods = foodsInfo => {
                     foodItemDiv.className = "foodItem"; // add class name to div
                     //add image and title to div and sent id to foodDetails function
                     foodItemDiv.innerHTML = `
-                    <img src = "${thumbnail}" onclick="foodDetails('${id}')">
+                    <a href="#" onclick="foodDetails('${id}')"><img src = "${thumbnail}"></a>
                     <h3 onclick="foodDetails('${id}')"><a href="#">${name}</a></h3>
                     `;
                     // push item to div to parent div
